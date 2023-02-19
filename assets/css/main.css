@@ -64,6 +64,16 @@ a{
 	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #08d665;
+}
+
 a:hover{
 	text-decoration: none;
 }
