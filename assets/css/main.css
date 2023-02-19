@@ -1,19 +1,7 @@
-/***************************************
-========================================
-
-	Author Name   : Belal Hossain
-	This is HTML5 template
-	Template Name : Roton Personal Portfolio Template
-	Version: 1.0
-	
-****************************************
-=======================================/
-
 
 /* ----------------------------------------------------------------
 
  ==> Table Of Content
-
 	01. Default
 	02. Header
 	03. Banner
@@ -23,10 +11,7 @@
 	07. Resume
 	08. Testimonial
 	09. Blog
-	10. Contact
-	11. Footer
- 
-
+	10. Footer
 ---------------------------------------------------------------- */
 /* ==========================================================================
 01. Start Default CSS Area
@@ -43,12 +28,7 @@ body{
     color: #333333;
     overflow-x: hidden;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
+h1,h2,h3,h4,h5,h6{
 	color: #333333;
 	font-weight: 600;
 }
@@ -108,150 +88,139 @@ ul li, ol li{
 }
 /*START PRELOADER DESIGN*/
 .preloader {
-  position: fixed;
-  left: 0;
-  width: 0;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  z-index: 9999999;
-  background-color: transparent;
-  -webkit-transition: .9s;
-  transition: .9s;
+	position: fixed;
+	left: 0;
+	width: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	z-index: 9999999;
+	background-color: transparent;
+	-webkit-transition: .9s;
+	transition: .9s;
 }
-
 .preloader .loader {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  display: inline-block;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 45%;
-  -webkit-transform: translateY(-45%);
-          transform: translateY(-45%);
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	display: inline-block;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 45%;
+	-webkit-transform: translateY(-45%);
+	transform: translateY(-45%);
 }
-
 .preloader .loader .loader-outter {
-  position: absolute;
-  border: 4px solid #08d665;
-  border-left-color: transparent;
-  border-bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  -webkit-animation: loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
-          animation: loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+	position: absolute;
+	border: 4px solid #08d665;
+	border-left-color: transparent;
+	border-bottom: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-animation: loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+	animation: loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
 }
-
 .preloader .loader .loader-inner {
-  position: absolute;
-  border: 4px solid #08d665;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  left: calc(50% - 30px);
-  top: calc(50% - 30px);
-  border-right: 0;
-  border-top-color: transparent;
-  -webkit-animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
-          animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+	position: absolute;
+	border: 4px solid #08d665;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	left: calc(50% - 30px);
+	top: calc(50% - 30px);
+	border-right: 0;
+	border-top-color: transparent;
+	-webkit-animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+	animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
 }
-
 .preloader .loader span {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-  color: #08d665;
-  font-size: 25px;
-  font-weight: 700;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	color: #08d665;
+	font-size: 25px;
+	font-weight: 700;
 }
-
 .preloader::before, .preloader::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 60%;
-  height: 100%;
-  z-index: -1;
-  background: #fff;
-  -webkit-transition: .9s;
-  transition: .9s;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 60%;
+	height: 100%;
+	z-index: -1;
+	background: #fff;
+	-webkit-transition: .9s;
+	transition: .9s;
 }
-
 .preloader::after {
-  left: auto;
-  right: 0;
+	left: auto;
+	right: 0;
 }
-
 .preloader.preloader-deactivate {
-  visibility: hidden;
+  	visibility: hidden;
 }
-
 .preloader.preloader-deactivate::after, .preloader.preloader-deactivate::before {
-  width: 0;
+  	width: 0;
 }
-
 .preloader.preloader-deactivate .loader {
-  opacity: 0;
-  visibility: hidden;
+	opacity: 0;
+	visibility: hidden;
 }
-
 @-webkit-keyframes loader-outter {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes loader-outter {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @-webkit-keyframes loader-inner {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 
 @keyframes loader-inner {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 /* END PRELOADER DESIGN*/
-
 .hero-heading{
 	font-size: 48px;
 	font-weight: 700;
@@ -360,7 +329,6 @@ button:focus{
 	padding: 12px 32px;
 }
 /* ScrollToTop */
-
 a.back-to-top{
 	display: none;
 	position: fixed;
@@ -413,7 +381,6 @@ a.back-to-top:hover, a.back-to-top:focus{
 /* ==========================================================================
 01. End Default CSS Area
 ========================================================================== */
-
 
 /* ==========================================================================
 02. Start Header Area
@@ -527,7 +494,6 @@ a.back-to-top:hover, a.back-to-top:focus{
 02. End Header Area
 ========================================================================== */
 
-
 /* ==========================================================================
 03. Start Banner Area
 ========================================================================== */
@@ -586,7 +552,6 @@ a.back-to-top:hover, a.back-to-top:focus{
 /* ==========================================================================
 03. End Banner Area
 ========================================================================== */
-
 
 /* ==========================================================================
 04. Start About Area
@@ -664,7 +629,6 @@ a.back-to-top:hover, a.back-to-top:focus{
 04. End About Area
 ========================================================================== */
 
-
 /* ==========================================================================
 05. Start Service Area
 ========================================================================== */
@@ -687,7 +651,7 @@ a.back-to-top:hover, a.back-to-top:focus{
 	transform: translate(0, -10px);
 }
 .services-item .icon{
-    background: url(../img/service/service-icon-bg.svg) no-repeat;
+    background: url("../img/service/service-icon-bg.svg") no-repeat;
     width: 90px;
     height: 90px;
     display: inline-block;
@@ -719,7 +683,6 @@ a.back-to-top:hover, a.back-to-top:focus{
 /* ==========================================================================
 05. End Service Area
 ========================================================================== */
-
 
 /* ==========================================================================
 06. Start Portfolio Area
@@ -829,7 +792,6 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 06. End Portfolio Area
 ========================================================================== */
 
-
 /*================================================
 Start FunFacts CSS
 =================================================*/
@@ -878,7 +840,6 @@ Start FunFacts CSS
 /* ==========================================================================
 04. End FunFacts CSS
 ========================================================================== */
-
 
 /* ==========================================================================
 09. Start Blog Area
@@ -950,120 +911,8 @@ Start FunFacts CSS
 09. End Blog Area
 ========================================================================== */
 
-
 /* ==========================================================================
-10. Start Contact Area
-========================================================================== */
-#contact{
-	position: relative;
-	overflow: hidden;
-}
-#contact #contactForm{
-	margin-top: 30px;
-}
-.form-control{
-	background: transparent;
-	border: 1px solid #ccc;
-	width: 100%;
-	margin-bottom: 20px;
-	font-size: 14px;
-	border-radius: 0;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-	padding: 1rem 1.5rem;
-}
-.dark_bg .form-control{
-	border: 1px solid #fff;
-}
-.form-control:focus{
-	background: transparent;
-	color: #fff;
-	box-shadow: none;
-	outline: none;
-	border-color: #08d665;
-}
-.contact-form-area{
-	background: transparent;
-}
-.contact-form-area h4{
-    font-size: 18px;
-    color: #222;
-    text-transform: uppercase;
-	margin: 10px 24px;
-}
-.dark_bg .contact-form-area h4{
-	color: #fff;
-}
-.footer-right-contact{
-    padding: 0px;
-    margin-top: 30px;
-}
-.footer-right-area{
-	border: 1px solid #ccc;
-	padding: 15px 10px;
-}
-.dark_bg .footer-right-area{
-	border: 1px solid #fff;
-}
-.footer-right-contact .single-contact{
-	margin: 10px 22px;
-	padding: 3px 55px;
-	position: relative;
-	color: #666;
-}
-.footer-right-contact .single-contact p{
-	margin-bottom: 5px;
-}
-.dark_bg .footer-right-contact .single-contact p{
-	color: #fff;
-}
-.footer-right-contact .single-contact p a{
-	color: #333333;
-}
-.dark_bg .footer-right-contact .single-contact p a{
-	color: #fff;
-}
-.footer-right-contact .contact-icon{
-	background: #08d665;
-	color: #fff;
-	border-radius: 50%;
-	font-size: 20px;
-	height: 40px;
-	left: 0;
-	padding-top: 8px;
-	position: absolute;
-	text-align: center;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-	width: 40px;
-}
-.text-danger{
-	font-size: 14px;
-	margin-top: 10px;
-}
-.list-unstyled li{
-	color: #d9534f;
-}
-#conatiner-map{
-	margin-top: 30px;
-	text-align: center;
-	background-color: #fff;
-	height: 370px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-	z-index: 101;
-	width: 100%;
-}
-/* ==========================================================================
-10. End Contact Area
-========================================================================== */
-
-
-/* ==========================================================================
-11. Start Footer Area
+10. Start Footer Area
 ========================================================================== */
 .footer-area{
 	padding: 30px 0 20px;
@@ -1074,5 +923,5 @@ Start FunFacts CSS
 	color: #fff;
 }
 /* ==========================================================================
-11. End Footer Area
+10. End Footer Area
 ========================================================================== */
